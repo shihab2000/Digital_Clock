@@ -23,12 +23,12 @@ const showTime = () => {
 
      let year = now.getFullYear();
     
-    // এখানে তুমি add করবে
+   
     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     let months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
-    let dayName = days[now.getDay()];       // আজকের দিন
-    let monthName = months[now.getMonth()]; // আজকের মাস
+    let dayName = days[now.getDay()];       
+    let monthName = months[now.getMonth()]; 
     let day = String(now.getDate()).padStart(2, "0");
 
     dateDisplay.textContent = `${dayName}, ${day} ${monthName} ${year}`;
